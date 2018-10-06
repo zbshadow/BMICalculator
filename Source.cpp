@@ -20,7 +20,7 @@ double bmi;
 
 
 int main () {
-	cout << "Welcome" << endl;
+	cout << "Welcome to BMI Calculator." << endl;
 	cout << "Please enter your weight in pounds: " << endl;
 	cin >> userWeight;
 	cout << "You entered " << userWeight << endl << endl;
@@ -33,7 +33,21 @@ int main () {
 
 	cout << "Your BMI is " << bmi << endl;
 	
-
+	if (bmi >= 18.5 && bmi <= 25) 
+	{
+		cout << "Your BMI indicates you are in optimal range." << endl;
+	}
+	else 
+	{
+		if (bmi > 25) 
+		{
+			cout << "You are overweight according to your BMI. Proper Diet and excersise are important" << endl;
+		}
+		else 
+		{
+			cout << "You are underweight. You should eat healthier and talk to your doctor about possible health risk." << endl;
+		}
+	}
 
 
 	return 0;
